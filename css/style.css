@@ -1,0 +1,952 @@
+﻿
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Channel';
+    src: url('Channel.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'ThreedFilled';
+    src: url('ThreedFilled.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Cocktail';
+    src: url('Cocktail.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'SweetiePie';
+    src: url('SweetiePie.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'FontDoll';
+    src: url('FontDoll.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'SexCandy';
+    src: url('SexCandy.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'DKwark';
+    src: url('DKwark.otf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'SybilGreen';
+    src: url('SybilGreen.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Iamonlinewithyou';
+    src: url('Iamonlinewithyou.otf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Christmas';
+    src: url('Christmas.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Bonnet';
+    src: url('Bonnet.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Galfont';
+    src: url('Galfont.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Garden';
+    src: url('Garden.ttf');
+}
+
+@font-face { /*définition d'une nouvelle police*/
+    font-family: 'Cars';
+    src: url('Cars.ttf');
+}
+
+body {
+    background-image:"fond-fibre-gris.jpg";
+	background-repeat: repeat;
+    font-family: 'SexCandy', Arial;
+	font-size: 20px;
+	color: #000000;
+	margin-top:0px;
+	text-align: center; 
+	height: 100%;
+	width: 100%;
+}
+
+#wrap{
+	width: 1000px;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h1 {
+ color: #e84946;
+ text-align: center;
+ margin: 0px;
+}
+ 
+h2 {
+ font-family: SexCandy;
+ font-size: 40px; 
+ color: #e84946;
+ text-align: center;
+ padding-left: 0px;
+}    
+
+h3 {
+ font-family: SexCandy;
+ font-size: 20px; 
+ color: #e84946; 
+ padding-left: 0px;
+}   
+
+h4 {
+ font-size: 100%; 
+ color: #e84946; 
+ padding-left: 0px;
+}   
+
+h5 {
+ font-size: 80%; 
+ color: #e84946; 
+ padding-left: 0px;
+}  
+
+h6 {
+ font-size: 70%; 
+ color: #000000; 
+ padding-left: 0px;
+}   
+
+em
+{
+ font-style: italic;
+    font-weight: bold;
+}
+
+a:link {
+ color: #000000;
+ text-decoration:none;
+ outline:none;
+}
+ 
+a:hover /* Apparence au survol des liens */{
+}
+ 
+a:visited {
+ color: #000000;
+}
+
+a: -webkit-any-link{
+cursor: auto;
+}
+ 
+ #header{
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	font-size: 12px;
+ }
+
+ #content{
+	text-align: center;
+	top: 250px;
+	margin: auto;
+	width: 1000px;
+}
+
+ nav{
+   text-align: center;
+   margin: auto;
+ }
+
+ #footer{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin: auto;
+ }
+
+ #banniere {
+ width: 800px;
+ height: 200px;
+ }
+ 
+ #banniere{
+ background: url("../img/banniere2.png") no-repeat;
+ }
+ 
+ #banniere:hover img{
+ visibility: hidden;
+ }
+ 
+ #organiser{
+   font-family: 'Cocktail', Arial;
+   background-color: #FE96A0;
+   font-size: 30px;
+   padding-bottom: 0px;
+   border-radius: 40px 0px 0px 40px;
+ }
+ 
+  #TitreOrganiser{
+   font-family: 'Cocktail', Arial;
+   font-size: 30px;
+   text-align: center;
+   color: #e84946;
+ }
+
+ #formlaireOrganiser{
+  position: relative;
+  top: 70px;
+ }
+ 
+  #recettes{
+   font-family: 'DKwark', Arial;
+   width: 200px;
+   background-color:#f99a46;
+   float:left;
+   height:70px;
+   font-size:27px;
+   vertical-align:middle;
+   padding-bottom:10px;
+ }
+ 
+  #TitreRecettes{
+   font-family: 'DKwark', Arial;
+   font-size:94px;
+   text-align: center;
+   color: #e84946;
+ }
+ 
+   #TitreRecettesNoel{
+   font-family: 'Christmas', Arial;
+   font-size:70px;
+   text-align: center;
+   color: #e84946;
+ }
+ 
+ #TitreRecettesScout{
+   font-family: 'Garden', Arial;
+   font-size:100px;
+   text-align: center;
+   color: #e84946;
+ }
+ 
+ #TitreRecettesCopine{
+   font-family: 'Galfont', Arial;
+   font-size:70px;
+   text-align: center;
+   color: #e84946;
+ }
+ 
+ #TitreRecettesRapide{
+   font-family: 'Cars', Arial;
+   font-size:40px;
+   text-align: center;
+   color: #e84946;
+ }
+ 
+ 
+  #revoir{
+   font-family: 'SweetiePie', Arial;
+   width: 200px;
+   background-color: #AEEE00;
+   float: left;
+   height: 70px;
+   font-size: 25px;
+   vertical-align: middle;
+   padding-top: 10px;
+ }
+ 
+   #TitreRevoir{
+   font-family: 'SweetiePie', Arial;
+   font-size: 20px;
+   color: #e84946;
+ }
+ 
+   #randomRecette{
+   font-family: 'ThreedFilled', Arial;
+   width: 200px;
+   background-color: #F4FF3A;
+   float: left;
+   height: 70px;
+   font-size: 20px;
+   vertical-align: middle;
+   padding-top: 18px;
+ }
+ 
+  #TitreRandom{
+  font-family: 'ThreedFilled', Arial;
+  font-size: 40px;
+   color: #e84946;
+  }
+
+   #ajout{
+   font-family: 'FontDoll', Arial;
+   width: 200px;
+   background-color: #A9A9F5;
+   float: left;
+   height: 70px;
+   font-size: 30px;
+   vertical-align: middle;
+   padding-top: 10px;
+   border-radius: 0px 40px 40px 0px;
+ }
+ 
+  #TitreAjout{
+   font-family: 'FontDoll', Arial;
+   font-size: 30px;
+   padding: 0px;
+   margin: 0px;
+   color: #e84946;
+ }
+
+  #logo{
+  display: inline-block;
+  float: left;
+  }
+  
+  #banniere{
+  display: inline-block;
+  float: left;
+  }
+  
+  .logoIMG{
+  -moz-transition-duration:0.8s;
+  -moz-transition-timing-function:linear;
+  -webkit-transition-duration:0.8s;
+  -webkit-transition-timing-function:linear;
+  transition-duration:0.8;
+  transition-timing-function:linear;
+  }
+
+  .logoIMG:hover {
+  -moz-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg);
+  }
+  
+  .corps_categorie{
+  overflow: hidden;
+  background: "img/fond-fibre-gris.jpg";
+  position: relative;
+  height: 80px;
+  width: 200px;
+  float: left;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  text-align : center;
+  display: block;
+  }
+  
+  .imgAccueil{
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+  
+  .imgAccueil:hover{
+  opacity: 0;
+  top: -50px;
+  left: -50px;
+  height: 120px;
+  width: 300px;
+  }
+  
+  .nom_categorie{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 200px;
+  vertical-align: middle;
+  z-index: 9;
+  }
+  
+  input, textarea, select {
+  border-radius:10px;
+  }
+ 
+  #emplacementMenu{
+  width: 220px;
+  height: 310px;
+  background-color: #ffffff;
+  font-family: SexCandy;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 15px 15px 15px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #425B8A;
+  padding-top: 10px;
+  margin: 5px;
+  }
+ 
+  .boutonType{
+  display: inline-block;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  }
+  
+  .boutonType:hover {
+  color: #15a5c4;
+  -moz-transform: translate(0,-10px);
+  -webkit-transform: translate(0,-10px);
+  transform: translate(0,-10px);
+  }
+  
+  #compteur{
+  text-align: right;
+  font-size: 18px;
+  position: relative;
+  top: -10px;  
+  left: 370px;
+  }
+ 
+  #emplacementRecette{
+  width: 220px;
+  height: 250px;
+  background-color: #ffffff;
+  font-family: SexCandy;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 15px 15px 15px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #425B8A;
+  padding-top: 10px;
+  margin: 5px;
+   transition: transform .3s ease-out; 
+  -moz-transition: -webkit-transform .3s ease-out;  
+  -webkit-transition: -moz-transform .3s ease-out; 
+  }
+  
+  #emplacementRecetteEve{
+  width: 980px;
+  height: 210px;
+  text-align: left;
+  background-color: #ffffff;
+  font-family: SexCandy;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 15px 15px 15px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #425B8A;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+   transition: transform .3s ease-out; 
+  -moz-transition: -webkit-transform .3s ease-out;  
+  -webkit-transition: -moz-transform .3s ease-out; 
+  }
+  
+  .contenuEve{
+  width: 750px;
+  position: relative;
+  top: -60px;
+  left: 210px;
+  }
+
+   .TitreRecetteEve{
+  font-family: DKwark;
+  font-size: 40px;
+  position: relative;
+  top: -200px;
+  }
+  
+  .PreparationEve{
+  position: relative;
+  top: -210px;
+  }
+  
+  #typeRecette{
+  position:relative;
+  top: -10px;
+  }
+  
+  #nom_type{
+  font-family: SexCandy;
+  text-align: center;
+  font-size: 60px;
+  }
+  
+  #polaroid{
+  width: 500px;
+  min-height: 600px;
+  background-color: #efefef;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #425B8A;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+  top: 20px;
+  }
+  
+  #TitreRecette{
+  font-family: DKwark;
+  font-size: 50px;
+  }
+  
+  #difficulte{
+  position: relative;
+  left: -220px;
+  top: 200px;
+  }
+  
+  #nbPersonne{
+  position: relative;
+  left: 220px;
+  top: 160px;
+  }
+  
+  .rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  }
+  
+  #photoRecette{
+  position: relative;
+  top: -40px;
+  }
+  
+  #titreIngredient{
+  font-family: DKwark;
+  font-size: 30px;
+  position: relative;
+  top: -40px;
+  }
+  
+  #ingredients{
+  text-align: left;
+  position: relative;
+  top: -30px;  
+  }
+  
+  #titrePreparation{
+  text-align: center;
+  font-family: DKwark;
+  font-size: 30px;
+  position: relative;
+  top: -30px;
+  }
+  
+  #preparation{
+  text-align: left;
+  position: relative;
+  top: -20px;
+  }
+  
+  #titreConseils{
+  text-align: center;
+  font-family: DKwark;
+  position: relative;
+  top: 0px;
+  font-size: 30px;
+  }
+  
+  #conseil{
+  text-align: left;
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+  }
+  
+  #titreAuteur{
+  text-align: left;
+  font-family: DKwark;
+  position: relative;
+  top: 10x;
+  font-size: 30px;
+  }
+  
+  #auteur{
+  text-align: left;
+  position: relative;
+  top: -5px;
+  }
+  
+  li { list-style-image : url(../img/fourchette.png);}
+
+  #boutonCote{  
+  position: fixed;
+  left: 10px;
+  top: 100px;
+  width: 100px;
+  height: 400px;
+  text-align: center;
+  background-image: url("../img/fond-aside.png"); 
+  }
+  
+  #presentationAside{
+  position: relative;
+  font-family: SybilGreen;
+  font-size: 18px;
+  color: #eae2d2;
+  top: 33px;
+  height: 40px;
+  width: 75px;
+  margin-left: 13px;
+ }
+ 
+ #placard{
+ position: relative;
+ top: 60px;
+ width: 75px;
+ height: 100px;
+ text-align: center;
+ background: url('../img/placcard2.png') no-repeat;
+ margin-left: 13px;
+ }
+ 
+ .cote:hover{
+ color: #zeae2d2;
+ }
+ 
+ .cote:hover img{
+ visibility: hidden;
+ }
+ 
+ #ustensiles{
+ position: relative;
+ top: 45px;
+ width: 75px;
+ height: 100px;
+ text-align: center;
+ background: url('../img/ustensiles2.png') no-repeat;
+ margin-left: 13px;
+ }
+ 
+ #balance{
+ position: relative;
+ top: 30px;
+ width: 75px;
+ height: 100px;
+ text-align: center;
+ background: url('../img/balance2.png') no-repeat;
+ margin-left: 13px;
+ }
+ 
+ .imgAside{
+ display: block;
+ }
+ 
+ .titreCote{
+ padding-bottom: 0px;
+ margin-bottom: 0px;
+ font-size: 15px;
+ color: #6a5d47;
+ position: relative;
+ }
+ 
+ .aside1{
+ position: relative;
+ top: -10px;
+ }
+ 
+ .aside2{
+ position: relative;
+ top: -15px;
+ }
+ 
+ .aside3{
+ position: relative;
+ top: -5px;
+ }
+ 
+ #finAside{
+  height: 40px;
+  width: 100px;
+ }
+ 
+ .cote{
+ list-style: none;
+ }
+ 
+ #Titreplacard{
+ font-family: Iamonlinewithyou;
+ font-size: 65px;
+ }
+ 
+ #etagere img{
+ width: 700px;
+ height: 650px;
+ }
+ 
+ .objet_placard{
+ display: inline-block;
+ }
+ 
+ /*.poivreF {
+ position: relative;
+ visibility: hidden;
+ top: -863px;
+ left: 271px;
+ }
+ 
+ .poivreF:hover{
+ visibility:visible;
+ }*/
+ 
+ #canelle{
+  position: relative;
+  top: -579px;
+  left: 521px;
+ }
+ 
+ #curry{
+ position: relative;
+ top: -584px;
+ left: 552px;
+ }
+ 
+ #sel{
+ position: relative;
+ top: -586px;
+ left: 546px;
+ }
+ 
+ #poivre{
+ position: relative;
+ top: -585px;
+ left: 524px;
+ }
+ 
+ #sucre{
+ position: relative;
+ top: -435px;
+ left: 205px;
+ }
+ 
+ #farine{
+ position: relative;
+ top: -439px;
+ left: 182px;
+ }
+ 
+ #levure{
+ position: relative;
+ top: -442px;
+ left: 167px;
+ }
+ 
+ #huileolive{
+ position: relative;
+ top: -439px;
+ left: 171px;
+ }
+ 
+ #vinaigre{
+ position: relative;
+ top: -442px;
+ left: 170px;
+ }
+ 
+  #beurre{
+ position: relative;
+ top: -289px;
+ left: -538px;
+ }
+ 
+  #chevre{
+ position: relative;
+ top: -388px;
+ left: 449px;
+ }
+ 
+  #vinblanc{
+ position: relative;
+ top: -330px;
+ left: -452px;
+ }
+ 
+  #fromageblanc{
+ position: relative;
+ top: -404px;
+ left: 443px;
+ }
+ 
+  #lait{
+ position: relative;
+ top: -297px;
+ left: -440px;
+ }
+ 
+  #moutarde{
+ position: relative;
+ top: -406px;
+ left: 422px;
+ }
+ 
+  #oeuf{
+ position: relative;
+ top: -402px;
+ left: 426px;
+ }
+ 
+  #parmesan{
+ position: relative;
+ top: -291px;
+ left: -447px;
+ }
+ 
+  #stmoret{
+ position: relative;
+ top: -293px;
+ left: -439px;
+ }
+ 
+  #chocolat{
+ position: relative;
+ top: -261px;
+ left: -167px;
+ }
+ 
+  #miel{
+ position: relative;
+ top: -263px;
+ left: -190px;
+ }
+ 
+  #speculoos{
+ position: relative;
+ top: -266px;
+ left: -235px;
+ }
+ 
+  #fruit{
+ position: relative;
+ top: -256px;
+ left: -253px;
+ }
+ 
+  #legume{
+ position: relative;
+ top: -253px;
+ left: -270px;
+ }
+ 
+  #oignon{
+ position: relative;
+ top: -259px;
+ left: -270px;
+ }
+ 
+  #basilic{
+ position: relative;
+ top: -256px;
+ left: -278px;
+ }
+ 
+  #ciboulette{
+ position: relative;
+ top: -370px;
+ left: 276px;
+ }
+ 
+  #thym{
+ position: relative;
+ top: -366px;
+ left: 242px;
+ }
+ 
+ #formContenants{
+ position: relative;
+ top: -106px;
+ left: -200px;
+ text-align: left;
+ display: inline-block;
+ }
+ 
+ #formIngredients{
+ position: relative;
+ text-align: left;
+ display: inline-block;
+ }
+ 
+ #resultats{
+ display: inline-block;
+ position: relative;
+ top: -133px;
+ left: 140px;
+ font-size: 30px;
+ font-weight: bold;
+ }
+ 
+ #res{
+ display: inline-block;
+ position: relative;
+ top: -136px;
+ left: 100;
+ }
+ 
+ #form-ajout-recette{
+ text-align: left;
+ }
+ 
+ #accueil_noel{
+ margin-top :50px;
+ }
+ 
+ #recettes_scout{
+ margin-top :50px;
+ }
+ 
+ #NextRandom{
+ margin-top: 30px;
+ }
+ 
+ .choix{
+ display: inline-block;
+ margin: 10px;
+ height: 250px;
+ background-color: #FFFFFF;
+ }
+ 
+  .nom_menu{
+ position: relative;
+ font-family: SexCandy;
+ font-size: 35px;
+ top: -150px;
+ left: 0px;
+ height: 80px;
+ font-weight: bold;
+ width: 400px;
+ color: white;
+ width: 400px;
+ vertical-align: middle;
+ opacity: 0;
+ text-shadow: 0px 0px 10px #000000;
+ }
