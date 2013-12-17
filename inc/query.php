@@ -93,7 +93,7 @@ function getRecetteFromType($Type){
 	echo 'délicieuses recettes disponibles.';
 	echo "</span>";
 	
-    include ('typeRecette.php');
+    include ('inc/typeBar.php');
     include ('inc/searchBar.php');
 	
 	if ($result = $mysqli->query($query)) {
@@ -315,7 +315,7 @@ function getRecetteFromTypeEve($eve, $id){
 		}
 	}
 	
-    include ('typeRecetteEve.php');
+    include ('inc/typeBar.php');
     include ('inc/searchBar.php');
 	
 	if ($result = $mysqli->query($query)) {

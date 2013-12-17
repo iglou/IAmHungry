@@ -18,7 +18,7 @@
     <div id="content"> 
 	   <br/>
 	   <?php
-					include ('typeRecette.php');
+					include ('inc/typeBar.php');
 					include ('inc/searchBar.php');
 		?>
 		<?php
@@ -28,7 +28,6 @@
 	
 	<?php
 		include('inc/boutoncote.php');
-		include('inc/je-veux-bar.php');
 	?>
 	
     <div id="footer">

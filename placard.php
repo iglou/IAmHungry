@@ -113,7 +113,6 @@
 		  
 		<?php
 				include('inc/boutoncote.php');
-				include('inc/je-veux-bar.php');
 		?>
 		
 		<script src="js/tooltip.js" type="text/javascript"></script>

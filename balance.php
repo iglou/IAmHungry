@@ -50,7 +50,6 @@
 	    </div>
 		<?php
 				include('inc/boutoncote.php');
-				include('inc/je-veux-bar.php');
 		?>
 
 		<div id="footer">

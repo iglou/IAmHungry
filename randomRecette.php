@@ -17,19 +17,19 @@
 		</div>
 		
 		<div id="content">
-			<div id="TitreRandom" class="animated bounceInRight">
-			  Random recette
+			<div class="animated bounceInRight">
+			  <h1>Random recette</h1>
 			</div>
 			<br/>
 			
 			<?php
-				include ('typeRecette.php');
+				include ('inc/typeBar.php');
 				include ('inc/searchBar.php');
 				echo getOneRandomRecette();
 			?>
 		
 			<div id="NextRandom">
-				<a href="random-recette.php"><button class="btn btn-primary btn-lg " style="background-color:#e84946; text-align:center;"> J'en veux une autre ! </button></a>
+				<a href="randomRecette.php"><button class="btn btn-primary btn-lg " style="background-color:#e84946; text-align:center;"> J'en veux une autre ! </button></a>
 			</div>
 		
 		</div>

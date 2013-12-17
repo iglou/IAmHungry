@@ -18,8 +18,12 @@
 		<div id="content">
 			<div id="TitreRecettes" class="animated bounceInRight">
 			  Voir mes recettes préférées
+			  
 			</div>
 			<br/>
+			<?php
+			  include ('inc/typeBar.php');
+			  ?>
 
 			<span id='compteur'>Actuellement, 
 			  <?php
@@ -28,7 +32,6 @@
 			</span>
 			
 			<?php
-					include ('typeRecette.php');
 					include ('inc/searchBar.php');
 			?>
 		  
@@ -40,7 +43,6 @@
 			
 			<?php
 				include('inc/boutoncote.php');
-				include('inc/je-veux-bar.php');
 			?>
 		</div>
 	
