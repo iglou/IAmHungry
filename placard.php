@@ -20,7 +20,7 @@
 			Dans mon placard et mon frigo, j'ai toujours...
 		  </div>
 		  <div id="etagere">
-			<img src="img/etagere.png">
+			<img src="img/boutoncote/etagere.png">
 		  </div>
 		  <!--ETAGE1-->
 		  <div class="objet_placard" id="canelle">

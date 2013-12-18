@@ -1,47 +1,13 @@
-﻿@font-face { /*définition d'une nouvelle police*/
-    font-family: 'SexCandy';
-    src: url('SexCandy.ttf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'DKwark';
-    src: url('DKwark.otf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'SybilGreen';
-    src: url('SybilGreen.ttf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'Iamonlinewithyou';
-    src: url('Iamonlinewithyou.otf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'Christmas';
-    src: url('Christmas.ttf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'Galfont';
-    src: url('Galfont.ttf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'Garden';
-    src: url('Garden.ttf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'Cars';
-    src: url('Cars.ttf');
-}
-
-@font-face { /*définition d'une nouvelle police*/
-    font-family: 'Love';
-    src: url('Love.ttf');
-}
+﻿/*Define new fonts*/
+@font-face { font-family: 'SexCandy'; src: url('fonts/SexCandy.ttf');}
+@font-face { font-family: 'DKwark'; src: url('fonts/DKwark.otf');}
+@font-face { font-family: 'SybilGreen'; src: url('fonts/SybilGreen.ttf');}
+@font-face { font-family: 'Iamonlinewithyou'; src: url('fonts/Iamonlinewithyou.otf');}
+@font-face { font-family: 'Christmas'; src: url('fonts/Christmas.ttf');}
+@font-face { font-family: 'Galfont'; src: url('fonts/Galfont.ttf');}
+@font-face { font-family: 'Garden'; src: url('fonts/Garden.ttf');}
+@font-face { font-family: 'Cars'; src: url('fonts/Cars.ttf');}
+@font-face { font-family: 'Love'; src: url('fonts/Love.ttf');}
 
 body {
     background-image:"fond-fibre-gris.jpg";
@@ -69,7 +35,6 @@ h1 {
 }
  
 h2 {
- font-family: SexCandy;
  font-size: 40px; 
  color: #e84946;
  text-align: center;
@@ -77,7 +42,6 @@ h2 {
 }    
 
 h3 {
- font-family: SexCandy;
  font-size: 20px; 
  color: #e84946; 
  padding-left: 0px;
@@ -113,7 +77,7 @@ a:link {
  outline:none;
 }
  
-a:hover /* Apparence au survol des liens */{
+a:hover{
 }
  
 a:visited {
@@ -123,6 +87,10 @@ a:visited {
 a: -webkit-any-link{
 cursor: auto;
 }
+
+ input, textarea, select {
+ border-radius:10px;
+ }
  
  #header{
 	width: 100%;
@@ -151,175 +119,159 @@ cursor: auto;
 	margin: auto;
  }
 
+ /*Home page*/
  #banniere {
  width: 800px;
  height: 200px;
  }
  
- #banniere{
- background: url("../img/banniere2.png") no-repeat;
- }
+ #banniere{ background: url("../img/banniere2.png") no-repeat; }
+ #banniere:hover img{ visibility: hidden; }
  
- #banniere:hover img{
- visibility: hidden;
- }
- 
- #menu-1{
- padding-top: 30px;
- padding-bottom: 30px;
- }
- 
- #menu-2{
- margin-top: 100px;
- }
+ #menu-1{ padding-top: 30px; padding-bottom: 30px; }
+ #menu-2{ margin-top: 100px; }
  
  .img-rond-accueil{
  width: 100px;
  padding: 2px;
  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
  }
  
-  .img-rond-accueil:hover {
-  -moz-transform: translate(0,-10px);
-  -webkit-transform: translate(0,-10px);
-  transform: translate(0,-10px);
-  }
- 
-  #recettes{
-   font-family: 'DKwark', Arial;
-   width: 200px;
-   background-color:#f99a46;
-   float:left;
-   height:70px;
-   font-size:27px;
-   vertical-align:middle;
-   padding-bottom:10px;
+ .img-rond-accueil:hover {
+ -moz-transform: translate(0,-10px);
+ -webkit-transform: translate(0,-10px);
+ transform: translate(0,-10px);
  }
  
-  #TitreRecettes{
-   font-family: 'DKwark', Arial;
-   font-size:94px;
-   text-align: center;
-   color: #e84946;
+ #banniere{
+ display: inline-block;
+ float: left;
+ }
+  
+ #logo{
+ display: inline-block;
+ float: left;
  }
  
-   #TitreRecettesNoel{
-   font-family: 'Christmas', Arial;
-   font-size:70px;
-   text-align: center;
-   color: #e84946;
+  .logoIMG{
+ -moz-transition-duration:0.8s;
+ -moz-transition-timing-function:linear;
+ -webkit-transition-duration:0.8s;
+ -webkit-transition-timing-function:linear;
+ transition-duration:0.8;
+ transition-timing-function:linear;
+ }
+
+ .logoIMG:hover {
+ -moz-transform:rotate(360deg);
+ -webkit-transform:rotate(360deg);
+ transform:rotate(360deg);
+ }
+ 
+ /*Recipe page*/
+ #recettes{
+ font-family: 'DKwark', Arial;
+ width: 200px;
+ background-color:#f99a46;
+ float:left;
+ height:70px;
+ font-size:27px;
+ vertical-align:middle;
+ padding-bottom:10px;
+ }
+ 
+ #TitreRecettes{
+ font-family: 'DKwark', Arial;
+ font-size:94px;
+ text-align: center;
+ color: #e84946;
+ }
+ 
+ #TitreRecettesNoel{
+ font-family: 'Christmas', Arial;
+ font-size:70px;
+ text-align: center;
+ color: #e84946;
  }
  
  #TitreRecettesScout{
-   font-family: 'Garden', Arial;
-   font-size:100px;
-   text-align: center;
-   color: #e84946;
+ font-family: 'Garden', Arial;
+ font-size:100px;
+ text-align: center;
+ color: #e84946;
  }
  
  #TitreRecettesCopine{
-   font-family: 'Galfont', Arial;
-   font-size:70px;
-   text-align: center;
-   color: #e84946;
+ font-family: 'Galfont', Arial;
+ font-size:70px;
+ text-align: center;
+ color: #e84946;
  }
  
  #TitreRecettesRapide{
-   font-family: 'Cars', Arial;
-   font-size:40px;
-   text-align: center;
-   color: #e84946;
+ font-family: 'Cars', Arial;
+ font-size:40px;
+ text-align: center;
+ color: #e84946;
  }
   
  #TitreRecettesAmoureux{
-   font-family: 'Love', Arial;
-   font-size:60px;
-   text-align: center;
-   color: #e84946;
+ font-family: 'Love', Arial;
+ font-size:60px;
+ text-align: center;
+ color: #e84946;
  }
-
-
-  /*Page INDEX*/
-  #banniere{
-  display: inline-block;
-  float: left;
-  }
   
-  #logo{
-  display: inline-block;
-  float: left;
-  }
+ .corps_categorie{
+ overflow: hidden;
+ position: relative;
+ height: 80px;
+ width: 200px;
+ float: left;
+ margin-right: 0px;
+ margin-bottom: 10px;
+ text-align : center;
+ display: block;
+ }
   
-  .logoIMG{
-  -moz-transition-duration:0.8s;
-  -moz-transition-timing-function:linear;
-  -webkit-transition-duration:0.8s;
-  -webkit-transition-timing-function:linear;
-  transition-duration:0.8;
-  transition-timing-function:linear;
-  }
-
-  .logoIMG:hover {
-  -moz-transform:rotate(360deg);
-  -webkit-transform:rotate(360deg);
-  transform:rotate(360deg);
-  }
+ .imgAccueil{
+ z-index: 10;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ opacity: 1;
+ -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ transition: all 0.5s;
+ }
   
-  .corps_categorie{
-  overflow: hidden;
-  background: "img/fond-fibre-gris.jpg";
-  position: relative;
-  height: 80px;
-  width: 200px;
-  float: left;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  text-align : center;
-  display: block;
-  }
+ .imgAccueil:hover{
+ opacity: 0;
+ top: -50px;
+ left: -50px;
+ height: 120px;
+ width: 300px;
+ }
   
-  .imgAccueil{
-  z-index: 10;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  opacity: 1;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  }
+ .nom_categorie{
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ height: 80px;
+ width: 200px;
+ vertical-align: middle;
+ z-index: 9;
+ }
   
-  .imgAccueil:hover{
-  opacity: 0;
-  top: -50px;
-  left: -50px;
-  height: 120px;
-  width: 300px;
-  }
-  
-  .nom_categorie{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 80px;
-  width: 200px;
-  vertical-align: middle;
-  z-index: 9;
-  }
-  
-  input, textarea, select {
-  border-radius:10px;
-  }
-  
-  #compteur{
-  text-align: right;
-  font-size: 18px;
-  position: relative;
-  top: -10px;  
-  left: 370px;
-  }
+ #compteur{
+ text-align: right;
+ font-size: 18px;
+ position: relative;
+ top: -10px;  
+ left: 370px;
+ }
   
  /*Affichage des 16 recettes par page*/
   #emplacementRecette{
@@ -519,17 +471,12 @@ cursor: auto;
  width: 75px;
  height: 100px;
  text-align: center;
- background: url('../img/placcard2.png') no-repeat;
+ background: url('../img/boutoncote/placcard2.png') no-repeat;
  margin-left: 13px;
  }
  
- .cote:hover{
- color: #zeae2d2;
- }
- 
- .cote:hover img{
- visibility: hidden;
- }
+ .cote:hover{ color: #zeae2d2; }
+ .cote:hover img{ visibility: hidden; }
  
  #ustensiles{
  position: relative;
@@ -537,7 +484,7 @@ cursor: auto;
  width: 75px;
  height: 100px;
  text-align: center;
- background: url('../img/ustensiles2.png') no-repeat;
+ background: url('../img/boutoncote/ustensiles2.png') no-repeat;
  margin-left: 13px;
  }
  
@@ -547,13 +494,11 @@ cursor: auto;
  width: 75px;
  height: 100px;
  text-align: center;
- background: url('../img/balance2.png') no-repeat;
+ background: url('../img/boutoncote/balance2.png') no-repeat;
  margin-left: 13px;
  }
  
- .imgAside{
- display: block;
- }
+ .imgAside{ display: block; }
  
  .titreCote{
  padding-bottom: 0px;
@@ -563,29 +508,16 @@ cursor: auto;
  position: relative;
  }
  
- .aside1{
- position: relative;
- top: -10px;
- }
- 
- .aside2{
- position: relative;
- top: -15px;
- }
- 
- .aside3{
- position: relative;
- top: -5px;
- }
+ .aside1{ position: relative; top: -10px; } 
+ .aside2{ position: relative; top: -15px; }
+ .aside3{ position: relative; top: -5px; }
  
  #finAside{
   height: 40px;
   width: 100px;
  }
  
- .cote{
- list-style: none;
- }
+ .cote{ list-style: none; }
  
  #Titreplacard{
  font-family: Iamonlinewithyou;
@@ -659,21 +591,10 @@ cursor: auto;
  left: 100;
  }
  
- #form-ajout-recette{
- text-align: left;
- }
- 
- #accueil_noel{
- margin-top :50px;
- }
- 
- #recettes_scout{
- margin-top :50px;
- }
- 
- #NextRandom{
- margin-top: 30px;
- }
+ #form-ajout-recette{ text-align: left; }
+
+ /*Random page*/
+ #NextRandom{ margin-top: 30px; }
  
  .choix{
  display: inline-block;
@@ -682,7 +603,7 @@ cursor: auto;
  background-color: #FFFFFF;
  }
  
-  .nom_menu{
+ .nom_menu{
  position: relative;
  font-family: SexCandy;
  font-size: 35px;
