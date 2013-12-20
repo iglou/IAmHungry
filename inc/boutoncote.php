@@ -20,4 +20,4 @@
 			<span class="titreCote aside3">Ma balance</span>
 		</a>
 	</div>
-</div>';
+</div>
