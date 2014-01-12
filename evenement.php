@@ -31,7 +31,7 @@
 			</span>
 			
 			<?php
-					include('inc/typeBar.php');
+					include('inc/typeBarEve.php');
 					include ('inc/searchBar.php');
 			?>
 				<?php

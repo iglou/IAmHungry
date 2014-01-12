@@ -6,7 +6,6 @@
     include 'inc/query.php';
   ?>
   
-  
 </head>
 	<body background="img/fond-fibre-gris.jpg">
 	

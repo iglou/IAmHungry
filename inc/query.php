@@ -5,15 +5,15 @@
 //*********************************************************************************************************************//
 
 function connection() {
-	$host = "mysql.hostinger.fr";
-	$user = "u311115548_val";
-	$password = "0M7ERUwU";
-	$database = "u311115548_repas";
+	//$host = "mysql.hostinger.fr";
+	//$user = "u311115548_val";
+	//$password = "0M7ERUwU$";
+	//$database = "u311115548_repas";
 
-	//$host = "localhost";
-	//$user = "root";
-	//$password = "";
-	//$database = "repas";
+	$host = "localhost";
+	$user = "root";
+	$password = "";
+	$database = "repas";
 	
 	$con=mysqli_connect($host,$user,$password,$database);
 	if (mysqli_connect_errno())
@@ -223,6 +223,39 @@ function getRecetteFromSearch($search){
     }
 }
 
+
+function getRecetteFromBigSearch($ingr1, $ingr2, $ingr3, $type, $temps){
+    $mysqli = connection();
+	$mysqli->set_charset("utf8");
+	$signe = '>';
+	if($temps = 'oui') {$signe = '<';}
+    $query = "SELECT IdRecette, Titre FROM recette WHERE Ingredients LIKE '%".$ingr1."%' AND Ingredients LIKE '%".$ingr2."%' AND Ingredients LIKE '%".$ingr3."%' AND Type = $type AND TpsPrepa ".$signe." 15;";
+    echo "<div id='phraseResult'><span id='nbrRestults'></span> résultats</div> ";
+    if ($result = $mysqli->query($query)) {
+        $cpt = 0;
+        while ($row = $result->fetch_assoc()) {
+            echo  "
+        		<div id='emplacementRecette' class='EMPLRecette'>
+				<a href='recipe.php?id=";
+			echo $row["IdRecette"];
+        	echo "'><img class='imgRecette' src='img/recettes/";
+			echo $row["IdRecette"];
+			echo ".jpg'>";
+			
+			echo "<span class='TitreRecette'>";
+			//echo strlen($row["Titre"]);
+        	if (strlen($row["Titre"]) > 26) {
+                echo substr($row["Titre"], 0, 26).'...';
+            }
+            else{
+                echo $row["Titre"];
+            }					
+			echo "</span>";
+			echo "</a></div>";
+        }
+    }
+}
+
 function getCountRecettesByType($Type) {
 	$mysqli = connection();
 	$mysqli->set_charset("utf8");
@@ -315,7 +348,7 @@ function getRecetteFromTypeEve($eve, $id){
 		}
 	}
 	
-    include ('inc/typeBar.php');
+    include ('inc/typeBarEve.php');
     include ('inc/searchBar.php');
 	
 	if ($result = $mysqli->query($query)) {

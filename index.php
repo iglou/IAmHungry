@@ -18,10 +18,19 @@
 			?>
 		</div>
 		
+		<div id="nav">
+			<ul>
+			<li></li>
+			<li></li>
+			</ul>
+		</div>
+		
 		<div id="content">
 			<?php
 				include('inc/typeBar.php');
+				include('inc/searchBar.php');
 			?>
+			<br/>
 
 			<!-- Carousel -->
 			<div class="flexslider">
@@ -35,7 +44,7 @@
 			<!-- /Carousel -->
 		
 		<?php
-			include('inc/boutoncote.php');
+			//include('inc/boutoncote.php');
 		?>		  
 		</div>
 

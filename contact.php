@@ -1,59 +1,72 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="css/bootstrap.css"/>
-    	<?php
-    		include ('inc/head.php');
-    	?>
-    </head>
- 
-    <body background="img/fond-fibre-gris.jpg">
-	<div id="wrap">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contactez moi</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/jquery.form.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/form.css">
+<script>
+$(function(){
+$('#contact').validate({
+submitHandler: function(form) {
+    $(form).ajaxSubmit({
+    url: 'process.php',
+    success: function() {
+    $('#contact').hide();
+    $('#contact-form').append("<p class='thanks'>Merci. J'y réponds dès que possible!</p><p><a href='index.php'>Retour à l'accueil</a></p>")
+    }
+    });
+    }
+});         
+});
+</script>
+</head>
+
+<body background="img/fond-fibre-gris.jpg">
+<div id="wrap">
 	<header>
 		<?php
 			include ('inc/header.php');
 		?>
 	</header>
-	
 	<content>
-	
 		<div id="TitreOrganiser">
 		  <h1> Contacter la webmaster</h1>
 		</div>
 		<br/>
-		  
-		<form class="form-horizontal" id="form-ajout-recette" novalidate>
-			<div class="form-group">
-				<label for="Nom" class="col-sm-2 control-label">Nom</label> 
-				<div class="col-sm-10"><input type="text" class="form-control" name="name" placeholder="Name" required data-validation-required-message="Il faut que je sache qui tu es, bel inconnu !"/></div>
-			</div>
-			
-			<div class="form-group">
-			<label for="Email" class="col-sm-2 control-label">Email</label> 
-				<div class="col-sm-10"><input type="text" class="form-control" name="email" placeholder="Email" required data-validation-required-message="Sans adresse, pas de réponse !" /></div>
-			</div>
-			
-			<div class="form-group">
-				<label for="Message" class="col-sm-2 control-label">Message</label> 
-				<div class="col-sm-10">
-					<textarea name="message" class="form-control" rows="3" placeholder="Message" id="message" required data-validation-required-message="Un ptit mot doux quand même !" minlength="5"  data-validation-minlength-message="Allez ! Au moins 5 lettres!" ></textarea>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="submit" class="col-sm-2 control-label"></label> 
-				<div class="col-sm-10">
-					<input name="submit" class="form-control" style="background-color:#e84946; font-size: 20px;" type=submit value="Send Message">
-				</div>
-			</div>
+
+		<div id="contact-form">	
+
+		<form class="form-horizontal contact" id="contact" method="post" action="">
+			<fieldset>	
+			<label for="name">Name</label>
+			<input type="text" name="name" placeholder="Nom" title="Entre ton nom bel inconnu !" class="required">
+
+			<label for="email">E-mail</label>
+			<input type="email" name="email" placeholder="nom@domaine.com" title="Sans adresse mail, pas de réponse!" class="required email">
+
+			<label for="website">Website</label>
+			<input type="url" name="url" placeholder="http://moi.fr">
+
+			<label for="message">Question/Comment</label>
+			<textarea name="message"></textarea>
+
+			<input type="submit" name="submit" class="button" id="submit" value="Send Message" />
+			</fieldset>
 		</form>
 	</content>
-	
-    <footer>
-	  </br></br><a href="index.php" style="text-decoration:none;"><h6>Back</h6></a>
-      <h6>Copyright Valentine Berge, 2013, tous droits réservés.</h6>
-    </footer>
-	
-	</div>
+</div><!-- /end #contact-form -->
+</div>
 
-    </body>
+<script src="js/modernizr-min.js"></script>
+<script>
+if (!Modernizr.input.placeholder){
+      $('input[placeholder], textarea[placeholder]').placeholder();
+}
+</script>
+</body>
 </html>
